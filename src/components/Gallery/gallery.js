@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logements from '../../data/locations.json';
+import '../../styles/gallery.css';
 
 function Gallery() {
   function Card({ image, title }) {
@@ -15,7 +16,7 @@ function Gallery() {
   }
 
   return (
-    <div className="home_gallery">
+    <div className="homeGallery">
       {logements.map((logement) => {
         return (
           <article key={logement.id}>
