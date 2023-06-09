@@ -1,22 +1,10 @@
-import styled from 'styled-components';
-
-const HomeWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-`;
-
-const StyledTitle = styled.h1`
-  padding-bottom: 30px;
-  max-width: 280px;
-  line-height: 50px;
-`;
+import '../../styles/index.css';
 
 function Home() {
   return (
-    <HomeWrapper>
-      <StyledTitle>Accueil</StyledTitle>
-    </HomeWrapper>
+    <div className="home">
+      <h1>Accueil</h1>
+    </div>
   );
 }
 

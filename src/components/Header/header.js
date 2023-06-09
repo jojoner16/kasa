@@ -1,30 +1,22 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import HomeLogo from '../../assets/logo_kasa.png';
-import { StyledLink } from '../../utils/style/Atoms';
-
-const NavContainer = styled.nav`
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const Logo = styled.img`
-  height: 70px;
-`;
+import '../../styles/header.css';
 
 function Header() {
   return (
-    <NavContainer>
+    <nav className="navContainer">
       <Link to="/">
-        <Logo src={HomeLogo} alt="logo kasa" />
+        <img className="headerLogo" src={HomeLogo} alt="logo kasa" />
       </Link>
-      <div>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/about">A Propos</StyledLink>
-      </div>
-    </NavContainer>
+      <nav className="headerNav">
+        <Link to="/" className="navLink">
+          Accueil
+        </Link>
+        <Link to="/about" className="navLink">
+          A Propos
+        </Link>
+      </nav>
+    </nav>
   );
 }
 
