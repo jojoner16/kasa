@@ -1,20 +1,31 @@
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import HomeLogo from '../../assets/logo_kasa.png';
 import '../../styles/header.css';
 
 function Header() {
+  const location = useLocation();
+  const [isHome, setIsHome] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === '/about') {
+      setIsHome(false);
+    } else {
+      setIsHome(true);
+    }
+  }, [location]);
   return (
     <nav className="navContainer">
       <Link to="/">
         <img className="headerLogo" src={HomeLogo} alt="logo kasa" />
       </Link>
       <nav className="headerNav">
-        <Link to="/" className="navLink">
+        <NavLink to="/" className={`navLink ${isHome && 'underline'}`}>
           Accueil
-        </Link>
-        <Link to="/about" className="navLink">
+        </NavLink>
+        <NavLink to="/about" className={`navLink ${!isHome && 'underline'}`}>
           A Propos
-        </Link>
+        </NavLink>
       </nav>
     </nav>
   );
