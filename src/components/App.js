@@ -4,6 +4,7 @@ import About from '../pages/About/about';
 import Home from '../pages/Home/home';
 import Header from './Header/header';
 import Footer from './Footer/footer';
+import ErrorPage from './Error/error';
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="/accueil" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer />
+      <Footer hideFooter={false} />
     </HashRouter>
   );
 };
