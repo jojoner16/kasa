@@ -5,9 +5,6 @@ import '../../styles/header.css';
 
 function Header() {
   const location = useLocation();
-  // const isHomePage = location.pathname === '/'; // Vérifie si la page actuelle est la page d'accueil
-  const isAboutPage = location.pathname === '/about'; // Vérifie si la page actuelle est la page "À Propos"
-  const isErrorPage = location.pathname === '/error'; // Vérifie si la page actuelle est la page d'erreur
   const [isHomePage, setIsHomePage] = useState(false);
 
   useEffect(() => {
@@ -24,17 +21,12 @@ function Header() {
         <img className="headerLogo" src={HomeLogo} alt="logo kasa" />
       </Link>
       <nav className="headerNav">
-        <NavLink
-          to="/"
-          className={`navLink ${isHomePage && !isErrorPage ? 'underline' : ''}`}
-        >
+        <NavLink to="/" className={`navLink ${isHomePage && 'underline'}`}>
           Accueil
         </NavLink>
         <NavLink
           to="/about"
-          className={`navLink ${
-            isAboutPage && !isErrorPage ? 'underline' : ''
-          }`}
+          className={`navLink ${!isHomePage && 'underline'}`}
         >
           À Propos
         </NavLink>
