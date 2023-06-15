@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer hideFooter={false} />
+      <Footer />
     </HashRouter>
   );
 };
