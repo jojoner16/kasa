@@ -3,8 +3,7 @@
   height: 223px;
   width: 90%;
   position: relative;
-  margin: auto;
-  margin-bottom: 2%;
+  margin: 0 auto 30px auto;
 }
 .bannerImg {
   border-radius: 25px;

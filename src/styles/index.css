@@ -4,8 +4,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Page à propos */
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* font-family: 'Montserrat', sans-serif; */
 }
+.collapse {
+  width: 100%;
+}
+.dropdown {
+  width: 100%;
+  margin: 20px auto 50px auto;
+}
+/* fin de la page à propos */
