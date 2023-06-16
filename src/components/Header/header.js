@@ -5,15 +5,15 @@ import '../../styles/header.css';
 
 function Header() {
   const location = useLocation();
-  const [isHomePage, setIsHomePage] = useState(false);
+  const [isErrorPage, setIsErrorPage] = useState(false);
 
   useEffect(() => {
-    if (location.pathname === '/about') {
-      setIsHomePage(false);
-    } else {
-      setIsHomePage(true);
-    }
+    setIsErrorPage(location.pathname === '/error');
   }, [location]);
+
+  const shouldUnderlineNavLink = (path) => {
+    return !isErrorPage && location.pathname === path;
+  };
 
   return (
     <nav className="navContainer">
@@ -21,12 +21,19 @@ function Header() {
         <img className="headerLogo" src={HomeLogo} alt="logo kasa" />
       </Link>
       <nav className="headerNav">
-        <NavLink to="/" className={`navLink ${isHomePage && 'underline'}`}>
+        <NavLink
+          to="/accueil"
+          className={`navLink ${
+            shouldUnderlineNavLink('/accueil') ? 'underline' : ''
+          }`}
+        >
           Accueil
         </NavLink>
         <NavLink
           to="/about"
-          className={`navLink ${!isHomePage && 'underline'}`}
+          className={`navLink ${
+            shouldUnderlineNavLink('/about') ? 'underline' : ''
+          }`}
         >
           À Propos
         </NavLink>
