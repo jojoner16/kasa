@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import '../../styles/collapses.css';
+import '../../styles/Components/collapses.css';
 
 function Collapse({ title, content }) {
   //declaration du state en utilisant le Hook useState()

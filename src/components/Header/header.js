@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import HomeLogo from '../../assets/logo_kasa.png';
-import '../../styles/header.css';
+import '../../styles/Components/header.css';
 
 function Header() {
   const location = useLocation();

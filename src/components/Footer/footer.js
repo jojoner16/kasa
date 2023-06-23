@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import FooterLogo from '../../assets/logo_footer.png';
-import '../../styles/footer.css';
+import '../../styles/Components/footer.css';
 
 function Footer() {
   const location = useLocation();
