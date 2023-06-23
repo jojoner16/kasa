@@ -5,6 +5,7 @@ import logements from '../../data/locations.json';
 import Host from '../../components/AccomodationSheet/host';
 import Rate from '../../components/AccomodationSheet/rate';
 import Tag from '../../components/AccomodationSheet/tags';
+import Collapse from '../../components/Collapse/collapse';
 import '../../styles/index.css';
 
 function RentalSheet() {
@@ -17,7 +18,16 @@ function RentalSheet() {
     return <div>Logement non trouvé.</div>; // Gérer le cas où aucun logement n'est trouvé avec l'ID donné
   }
 
-  const { pictures, title, location, host, rating, tags } = logement;
+  const {
+    pictures,
+    title,
+    location,
+    host,
+    rating,
+    tags,
+    description,
+    equipments,
+  } = logement;
 
   return (
     <main>
@@ -37,6 +47,15 @@ function RentalSheet() {
           {tags.map((tag, index) => (
             <Tag key={index} tags={tag} />
           ))}
+        </div>
+
+        <div className="description">
+          <div className="contentDescription">
+            <Collapse title="Description" content={description} />
+          </div>
+          <div className="contentEquipement">
+            <Collapse title="Équipements" content={equipments.join('\n')} />
+          </div>
         </div>
       </div>
     </main>
