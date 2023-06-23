@@ -15,7 +15,7 @@ function RentalSheet() {
   const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé.</div>; // Gérer le cas où aucun logement n'est trouvé avec l'ID donné
+    return <div className="notFound">Logement non trouvé !</div>; // Gérer le cas où aucun logement n'est trouvé avec l'ID donné
   }
 
   const {
