@@ -5,6 +5,7 @@ import Home from '../pages/Home/home';
 import Header from './Header/header';
 import Footer from './Footer/footer';
 import ErrorPage from './Error/error';
+import RentalSheet from '../pages/Locations/rentalSheet';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="/accueil" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/location/:id" element={<RentalSheet />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
