@@ -18,3 +18,25 @@ body {
   margin: 30px auto 66px auto;
 }
 /* fin de la page à propos */
+
+/* page locations */
+.owner {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: -30px auto 0 auto;
+  transform: translateY(-45%);
+}
+.ownerInformation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.tagsInformation {
+  width: 90%;
+  margin: -60px auto 30px auto;
+  transform: translateY(-60%);
+}
+/* fin page locations */
