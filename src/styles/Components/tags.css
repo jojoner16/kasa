@@ -1,0 +1,13 @@
+.tagContainer {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tagButton {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #ff6060;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #ffffff;
+}

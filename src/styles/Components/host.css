@@ -1,0 +1,14 @@
+.host {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.hostPicture {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+.hostName {
+  color: #ff6060;
+  width: 50%;
+}
