@@ -15,9 +15,9 @@ function Collapse({ title, content }) {
   return (
     // affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
     <div className="dropdownContainer">
-      <div className="dropdownTitle">
+      <div className="dropdownTitle" onClick={display}>
         <h2>{title}</h2>
-        <p className="chevron" onClick={display}>
+        <p className="chevron">
           {isOpen ? (
             <FontAwesomeIcon icon={faChevronUp} />
           ) : (
