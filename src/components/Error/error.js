@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Footer from '../../components/Footer/footer';
+// import Footer from '../../components/Footer/footer';
 import '../../styles/Components/error.css';
 
 function ErrorPage() {
@@ -11,7 +11,7 @@ function ErrorPage() {
       <NavLink to="/" className="errorLink">
         Retourner sur la page d'accueil
       </NavLink>
-      <Footer hideFooter={true} />{' '}
+      {/* <Footer hideFooter={true} />{' '} */}
       {/* Ajoutez la prop hideFooter avec la valeur true */}
     </div>
   );
