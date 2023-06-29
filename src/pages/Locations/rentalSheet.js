@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import SlideShow from '../../components/AccomodationSheet/slider';
 import logements from '../../data/locations.json';
 import Host from '../../components/AccomodationSheet/host';
@@ -15,7 +15,11 @@ function RentalSheet() {
   const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <div className="notFound">Logement non trouvé !</div>; // Gérer le cas où aucun logement n'est trouvé avec l'ID donné
+    // Utilisation de Navigate
+    return <Navigate to="/error" />;
+    // ou Utilisation de useNavigate
+    // const navigate = useNavigate();
+    // navigate('/error');
   }
 
   const {
