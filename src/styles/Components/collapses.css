@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 75%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 34px auto;
   justify-content: center;
   align-items: center;
 }
@@ -27,13 +27,26 @@ h2 {
   color: #ffffff;
   width: 24px;
   margin: 0 0.8em 0 0;
+  transition: transform 0.8s ease; /* Animation de la flèche */
+  transform-origin: center; /* Définit le centre de rotation au milieu du chevron */
+}
+.chevron-rotate {
+  transform: rotate(180deg) scaleY(-1); /* Applique la rotation de 180 degrés et inverse verticalement */
 }
 .dropdownContent {
   width: 100%;
   background-color: #f7f7f7;
   border-radius: 0 0 5px 5px;
   margin-top: -0.4em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease; /* Animation de la boîte déroulante */
 }
+.dropdownContent-open {
+  max-height: 500px; /* Taille max de la boîte déroulante */
+  transition: max-height 0.8s ease;
+}
+
 .content {
   color: #ff6060;
   font-size: 24px;
