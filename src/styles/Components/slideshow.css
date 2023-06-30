@@ -84,3 +84,27 @@ h2.slideTitle {
   color: #ff6060;
   margin: 10px 0 10px 0;
 }
+
+@media screen and (max-width: 767px) {
+  .slideshow {
+    height: 255px;
+  }
+  .arrow {
+    font-size: 24px;
+  }
+  .slideNumber {
+    display: none;
+  }
+  img.slide {
+    border-radius: 10px;
+  }
+  .slideshow {
+    margin: 15px auto;
+  }
+  h2.slideTitle {
+    font-size: 18px;
+  }
+  .slideLocation {
+    font-size: 14px;
+  }
+}

@@ -12,3 +12,14 @@
   font-weight: 500;
   color: #ffffff;
 }
+
+@media screen and (max-width: 767px) {
+  .tagButton {
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  .tagContainer {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}

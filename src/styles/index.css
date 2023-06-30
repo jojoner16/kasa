@@ -39,9 +39,6 @@ body {
   margin: -60px auto 30px auto;
   transform: translateY(-60%);
 }
-/* fin page locations */
-
-/* collapse decription */
 .description {
   width: 90%;
   display: flex;
@@ -49,28 +46,51 @@ body {
   justify-content: space-between;
   margin: 0 auto 60px auto;
 }
-.contentDescription,
-.contentEquipement {
-  width: 100%;
-}
-.contentDescription .dropdownContainer {
+.contentDescription {
   width: 96%;
-  margin-left: 0;
-}
-.contentEquipement .dropdownContainer {
-  width: 96%;
-  margin-right: 0;
 }
 .contentEquipement {
+  width: 96%;
   white-space: pre-line;
+  display: flex;
+  justify-content: flex-end;
 }
-
-/* fin collapse description */
+/* fin page locations */
 
 @media screen and (max-width: 767px) {
   body,
   main {
     margin: 0;
     padding: 0;
+  }
+  .description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    order: 3; /* Nouvelle propriété */
+  }
+  .contentDescription,
+  .contentEquipement {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+  .accommodation {
+    display: flex; /* Ajout de display: flex */
+    flex-direction: column; /* Ajout de flex-direction: column */
+  }
+  .owner {
+    display: flex; /* Ajout de display: flex */
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto 4% auto;
+    transform: none;
+    order: 2; /* Nouvelle propriété */
+  }
+  .tagsInformation {
+    margin: 1% auto 1% auto;
+    transform: none;
+    order: 1; /* Nouvelle propriété */
   }
 }

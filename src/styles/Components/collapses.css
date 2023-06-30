@@ -1,9 +1,8 @@
 .dropdownContainer {
+  width: 96%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  width: 75%;
-  margin: 0 auto 34px auto;
-  justify-content: center;
   align-items: center;
 }
 .dropdownTitle {
@@ -44,13 +43,25 @@ h2 {
 }
 .dropdownContent-open {
   max-height: 500px; /* Taille max de la boîte déroulante */
-  transition: max-height 0.8s ease;
+  transition: max-height 2s ease;
 }
-
 .content {
   color: #ff6060;
   font-size: 24px;
   font-weight: 400;
   margin: 0.6em auto 0 auto;
   padding: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .dropdownContainer {
+    width: 100%;
+  }
+  .dropdownTitle h2 {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .content {
+    font-size: 14px;
+  }
 }
