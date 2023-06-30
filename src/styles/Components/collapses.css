@@ -55,7 +55,8 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .dropdownContainer {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto 30px auto;
   }
   .dropdownTitle h2 {
     font-size: 14px;
