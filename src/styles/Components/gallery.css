@@ -64,3 +64,22 @@
   border-radius: 25px;
   margin-bottom: 40px;
 }
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .homeGallery {
+    width: 100%;
+    padding: 0;
+    background: none;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+    row-gap: 0;
+  }
+  .card {
+    width: 335px;
+    height: 255px;
+  }
+  .cardTitle {
+    font-size: 14px;
+  }
+}

@@ -15,3 +15,20 @@
   color: #ffffff;
   font-size: 24px;
 }
+
+@media screen and (max-width: 767px) {
+  .footerContainer {
+    height: 209px;
+    padding: 0;
+  }
+  .footerLogo {
+    width: 122px;
+    height: 39px;
+  }
+  .footerText {
+    font-size: 12px;
+  }
+  .footerCopyright {
+    font-size: 12px;
+  }
+}

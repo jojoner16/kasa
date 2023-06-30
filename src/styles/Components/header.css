@@ -25,3 +25,19 @@
 .underline {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 767px) {
+  .navContainer {
+    height: 47px;
+    margin: 15px auto;
+    padding: 0;
+  }
+  .navLink {
+    font-size: 12px;
+    padding: 0 6px;
+  }
+  .headerLogo {
+    width: 145px;
+    height: 47px;
+  }
+}

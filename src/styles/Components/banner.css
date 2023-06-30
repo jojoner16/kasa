@@ -31,3 +31,20 @@
   color: #ffffff;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 111px;
+    margin: 0 auto 20px auto;
+  }
+  .bannerImg,
+  .bannerDark {
+    border-radius: 10px;
+  }
+  .bannerText {
+    width: 217px;
+    font-size: 24px;
+    text-align: left;
+    left: 38%;
+  }
+}
