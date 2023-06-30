@@ -22,3 +22,20 @@
   font-weight: 500;
   margin: 3rem 0 1.05rem 0;
 }
+
+@media screen and (max-width: 767px) {
+  .errorNumber {
+    font-size: 96px;
+    margin-top: 3.25rem;
+  }
+  .errorText {
+    width: 260px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    white-space: pre-line; /* Permet le saut de ligne */
+  }
+  .errorLink {
+    font-size: 14px;
+  }
+}
