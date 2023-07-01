@@ -10,10 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.collapse {
-  width: 90%;
-  margin: 0 auto;
-}
+
 .dropdown {
   width: 100%;
   margin: 30px auto 66px auto;
@@ -47,14 +44,20 @@ body {
   justify-content: space-between;
   margin: 0 auto 60px auto;
 }
-.contentDescription {
+.contentDescription,
+.contentEquipement {
+  width: 100%;
+}
+.contentDescription .dropdownContainer {
   width: 96%;
+  margin-left: 0;
+}
+.contentEquipement .dropdownContainer {
+  width: 96%;
+  margin-right: 0;
 }
 .contentEquipement {
-  width: 96%;
   white-space: pre-line;
-  display: flex;
-  justify-content: flex-end;
 }
 /* fin page locations */
 
@@ -95,6 +98,7 @@ body {
     order: 1; /* Nouvelle propriété */
   }
   .dropdown {
+    width: 90%;
     margin: 5px auto 30px auto;
   }
 }
