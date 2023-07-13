@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import About from '../pages/About/about';
 import Home from '../pages/Home/home';
@@ -8,6 +8,10 @@ import ErrorPage from './Error/error';
 import RentalSheet from '../pages/Locations/rentalSheet';
 
 const App = () => {
+  // useEffect permet de modifier le titre de la page
+  useEffect(() => {
+    document.title = 'Kasa';
+  }, []);
   return (
     <HashRouter>
       <Header />
