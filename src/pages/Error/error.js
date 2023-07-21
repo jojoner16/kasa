@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import Footer from '../../components/Footer/footer';
 import '../../styles/Components/error.css';
 
 function ErrorPage() {
@@ -15,6 +14,7 @@ function ErrorPage() {
       <p className="errorNumber">404</p>
       <p className="errorText">{errorMessage}</p>
       <NavLink to="/" className="errorLink">
+        {/* Le composant NavLink est utilisé pour créer un lien vers la page d'accueil */}
         Retourner sur la page d'accueil
       </NavLink>
     </div>

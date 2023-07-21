@@ -6,13 +6,16 @@ import '../../styles/index.css';
 function Home() {
   return (
     <main>
+      {/* La balise <main> est utilisée pour représenter le contenu principal de la page */}
+
       <div className="home">
+        {/* Composant Banner pour afficher la bannière de la page d'accueil */}
         <Banner
           texte="Chez vous, partout et ailleurs"
-          image={HomeBannerImg}
+          image={HomeBannerImg} // L'image qui sera affichée dans la bannière
           alt="image banière accueil"
         />
-        <Gallery />
+        <Gallery /> {/* Composant Gallery pour afficher une galerie d'images */}
       </div>
     </main>
   );
