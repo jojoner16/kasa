@@ -4,7 +4,7 @@ import About from '../pages/About/about';
 import Home from '../pages/Home/home';
 import Header from './Header/header';
 import Footer from './Footer/footer';
-import ErrorPage from './Error/error';
+import ErrorPage from '../pages/Error/error';
 import RentalSheet from '../pages/Locations/rentalSheet';
 
 const App = () => {
