@@ -24,14 +24,12 @@
   .footerLogo {
     width: 122px;
     height: 39px;
+    margin: 0;
   }
   .footerText {
     font-size: 12px;
   }
   .footerCopyright {
     font-size: 12px;
-  }
-  .footerLogo {
-    margin-top: 0;
   }
 }
