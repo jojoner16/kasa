@@ -31,4 +31,7 @@
   .footerCopyright {
     font-size: 12px;
   }
+  .footerLogo {
+    margin-top: 0;
+  }
 }
